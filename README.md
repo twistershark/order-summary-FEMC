@@ -1,7 +1,7 @@
 <h1 align="center">Welcome to Order Summary 💳</h1>
 
 <h3 align="center">
-  <a href="https://devfinder-rmvcxt18o-twistershark.vercel.app/">Live Demo</a>
+  <a href="https://twistershark.github.io/order-summary-FEMC/">Live Demo</a>
   </h3>
 
 <p align="center">
