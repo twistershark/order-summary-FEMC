@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* COLORS */
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --white: #ffffff;
+
+  /* FONTS */
+  --font-family: "Red Hat Display", sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--pale-blue);
+
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+@media (max-width: 767px) {
+  body {
+    background-image: url("./images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url("./images/pattern-background-desktop.svg");
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}
+
+button,
+a {
+  font-family: var(--font-family);
+}
+
+.card {
+  width: min(87%, 420px);
+  margin-inline: auto;
+  border-radius: 24px;
+
+  background: var(--white);
+}
+
+.card__heroimg {
+  width: 100%;
+  border-radius: 24px 24px 0 0;
+}
+
+.card__content {
+  padding: 2em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 1.5rem;
+}
+
+.card__content h1 {
+  color: var(--dark-blue);
+  font-size: 1.4rem;
+}
+
+.card__content-description {
+  color: var(--desaturated-blue);
+  font-weight: 400;
+  text-align: center;
+
+  line-height: 1.6;
+
+  width: 87%;
+}
+
+.card__plan-container {
+  background: var(--very-pale-blue);
+
+  padding: 1em;
+  border-radius: 12px;
+
+  display: flex;
+  gap: 1.2em;
+  align-items: center;
+  width: 100%;
+}
+
+.card__plan-container a {
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-left: auto;
+}
+
+.card__plan-pricing {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+
+.card__plan-pricing p:first-of-type {
+  color: var(--dark-blue);
+
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.card__plan-pricing p:last-of-type {
+  color: var(--desaturated-blue);
+
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.card__proceed-button {
+  background: var(--bright-blue);
+  color: var(--very-pale-blue);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+
+  font-weight: 700;
+  font-size: 1rem;
+
+  width: 100%;
+
+  padding: 1em 0;
+
+  filter: drop-shadow(0 0.75em 0.75rem rgb(212, 208, 252));
+
+  transition: transform 0.5s ease-in-out;
+}
+
+.card__proceed-button:hover {
+  transform: scale(1.05);
+}
+
+.card__cancel-button {
+  background: none;
+  color: var(--desaturated-blue);
+  border: none;
+  cursor: pointer;
+
+  font-weight: 700;
+  font-size: 0.95rem;
+
+  transition: color 0.5s ease-in-out;
+}
+
+.card__cancel-button:hover {
+  color: var(--bright-blue);
+}
