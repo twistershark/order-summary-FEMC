@@ -5,15 +5,11 @@
   </h3>
 
 <p align="center">
-  <img alt="order-summary" src="https://github.com/twistershark/devfinder/blob/main/docs/1.png" />
+  <img alt="order-summary" src="https://github.com/twistershark/order-summary-FEMC/blob/main/design/desktop-preview.jpg" />
 </p>
 
 <h1 align="center">
-  <img alt="order-summary" src="https://github.com/twistershark/devfinder/blob/main/docs/2.png" />
-</h1>
-
-<h1 align="center">
-  <img alt="order-summary" src="https://github.com/twistershark/devfinder/blob/main/docs/3.png" />
+  <img alt="order-summary" src="https://github.com/twistershark/order-summary-FEMC/blob/main/design/mobile-design.jpg" />
 </h1>
 
 ---

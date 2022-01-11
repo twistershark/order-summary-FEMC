@@ -50,6 +50,16 @@ body {
 button,
 a {
   font-family: var(--font-family);
+  text-decoration: none;
+}
+
+a {
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #766cf1;
+  text-decoration: none;
 }
 
 .card {
@@ -144,11 +154,11 @@ a {
 
   filter: drop-shadow(0 0.75em 0.75rem rgb(212, 208, 252));
 
-  transition: transform 0.5s ease-in-out;
+  transition: background 0.3s ease-in-out;
 }
 
 .card__proceed-button:hover {
-  transform: scale(1.05);
+  background: #766cf1;
 }
 
 .card__cancel-button {
@@ -160,9 +170,9 @@ a {
   font-weight: 700;
   font-size: 0.95rem;
 
-  transition: color 0.5s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 .card__cancel-button:hover {
-  color: var(--bright-blue);
+  color: var(--dark-blue);
 }
